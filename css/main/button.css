@@ -1,0 +1,21 @@
+button {
+	font-family: 方正舒体;
+	vertical-align: middle;
+	border: none;
+}
+
+.bt_selected {
+	background: url(https://yibaohome-1256005495.cos.ap-guangzhou.myqcloud.com/frameBig.png) no-repeat;
+	background-size: cover;
+	width: 30%;
+	font-size: 40pt;
+}
+
+.bt_no_selected {
+	background: url(https://yibaohome-1256005495.cos.ap-guangzhou.myqcloud.com/frameSmall.png);
+	font-size: 30pt;
+}
+
+button#main_page_bt{
+	margin-left: 244pt;
+}
