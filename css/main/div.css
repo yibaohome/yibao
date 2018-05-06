@@ -17,6 +17,21 @@ div#banner {
 
 }
 
+
+div#path{
+	font-size:medium;
+	padding-top:70px;
+	
+}
+
+div#book-axis{
+	
+}
+
+div#book{
+	
+}
+
 div#qq {
 	z-index: 1;
 	margin-top: -9%;
@@ -96,6 +111,8 @@ div#carousel-example-generic {
 
 
 /*滚动效果样式--end*/
+
+
 
 #foot{
 	text-align:center;	

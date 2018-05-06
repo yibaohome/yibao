@@ -1,73 +1,234 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
-		<meta charset="UTF-8">
-		<title>yibao~photo</title>
-		
-		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
-		<script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-   		<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-   		
-   		<style>
-		body{
-				background-color: #EBCCCC;
-				background-repeat: no-repeat;
-				background-attachment: fixed;
-			}
-	</style>
+		<meta charset="utf-8" />
+		<meta name="viewport, user-scalable=no" content="width=device-width,initial-scale=1.0, user-scalable=0;" />
+		<!--<link rel="icon" href="图片位置" type="image/x-icon"/>-->
+		<link rel="shortcut icon" type="image/x-icon" href="https://yibaohome-1256005495.cos.ap-guangzhou.myqcloud.com/qiuqian.png " media="screen" />
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<script type="text/javascript" src="lib/bootstrap-3.3.7-dist/js/jquery-2.1.1.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="lib/bootstrap-3.3.7-dist/js/photo-gallery.js"></script>
+		<!--[if IE]>-->
+		<!--自定义样式-->
+		<link rel="stylesheet" href="css/main/body.css" />
+		<link rel="stylesheet" href="css/main/div.css" />
+		<link rel="stylesheet" href="css/main/button.css" />
+		<link rel="stylesheet" href="css/main/div.css" />
+		<link rel="stylesheet" href="css/reset.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>怡宝家-相册</title>
+		<script type="text/javascript">
+			$(function(){
+				$("span").css({"font-family": "方正舒体",color: "#000000"});
+			});
+		</script>
 	</head>
+
 	<body>
-		<div class="page-header">
-  			<h3>欢迎光临啦 <small><span style="color:red;">怡宝的家</span></small></h3>
-		</div>
-		<ul class="nav nav-tabs" >
-  	<li role="presentation" class="active "><a href="#">首页</a></li>
- 		<li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-         相册 <span class="caret"></span>
-      </a>
-      <ul class="dropdown-menu" >
-         <li><a href="#">艺术照</a></li>
-         <li><a href="#">成长照</a></li>
-         <li><a href="#">生活照</a></li>
-         
-      </ul>
-   </li>
-  <li role="presentation"><a href="#">日志</a></li>
-  <li role="presentation"><a href="#">怡宝家</a></li>
-  <li role="presentation"><a href="#">给我留言</a></li>
-</ul>
-	<div><h5>您所处的位置：</h5></div>
-	<ol class="breadcrumb">
-  <li><a href="#">相册</a></li>
-  <li class="active">怡宝生活照</li>
-</ol>
-	<table border="0" width="100%" height="60%" style="height:500px;width:1200px;">
-	
-	
-				<td width="18%" align="center"  >怡宝生活照</td>
-				<td rowspan="4">
-					
-					<iframe src="bootstrap-photo-gallery-master/demo.html#ads"
-						frameborder="0" height="100%"
-						width="100%"
-						name="mainFrame"></iframe>
-				</td>
-			</tr>
-			<div class="photo-item cs" id="photoContainer" style="width: px; height: 32px; left: 150px; top: 252px; "><div class="head-nav"><ul class="head-nav-menu"><li class="menu_item_N1"><span class="arr"></span><a href="javascript:;" title="主页" tabindex="1" accesskey="z">艺术照</a></li><li class="menu_item_2"><span class="arr"></span><a href="javascript:;" title="旅游照" tabindex="1" accesskey="r">旅游照</a></li><li class="menu_item_4"><span class="arr"></span><a href="javascript:;" title="相册" tabindex="1" accesskey="4">抓拍</a></li><li class="menu_item_334"><span class="arr"></span><a href="javascript:;" title="留言板" tabindex="1">可爱</a></li><li class="menu_item_311"><span class="arr"></span><a href="javascript:;" title="说说" tabindex="1" accesskey="6">搞怪</a></li><li class="menu_item_1"><span class="arr"></span><a href="javascript:;" title="个人档" tabindex="1" accesskey="1">哭鼻子</a></li><li class="menu_item_305"><span class="arr"></span><a href="javascript:;" title="音乐" tabindex="1">吃饭睡觉</a></li><li class="menu_item_more"><span class="arr"></span><a href="javascript:;" title="更多" tabindex="1">更多</a></li></ul></div></div>
-	
+		<div id="all">
+			<div id="navfirst">
+				<ul class="hList">
+					<li>
+						<a href="index.html" class="menu">
+							<h2 class="menu-title">首页</h2>
+							<ul class="menu-dropdown">
+								<li>首页 </li>
+							</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#click" class="menu">
+							<h2 class="menu-title menu-title_2nd">相册</h2>
+							<ul class="menu-dropdown">
+								<li>出生</li>
+								<li>风景</li>
+								<li>亲子</li>
+								<li>艺术</li>
+							</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#click" class="menu">
+							<h2 class="menu-title menu-title_3rd">日志</h2>
+							<ul class="menu-dropdown">
+								<li>成长</li>
+								<li>学习</li>
+								<li>互动</li>
+							</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#click" class="menu">
+							<h2 class="menu-title menu-title_4th">怡宝家</h2>
+							<ul class="menu-dropdown">
+								<li>爷爷</li>
+								<li>奶奶</li>
+								<li>外公</li>
+								<li>外婆</li>
+								<li>爸爸</li>
+								<li>妈妈</li>
+								<li>家人</li>
+							</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#click" class="menu">
+							<h2 class="menu-title menu-title_5th">留言板</h2>
+							<ul class="menu-dropdown">
+								<li>记忆</li>
+							</ul>
+						</a>
+					</li>
+				</ul>
+			</div>
 
+			<div id="path" style="padding-top: 60px;">
+				<ol class="breadcrumb">
+					当前位置->>
+					<li><a href="#">相册</a></li>
+					<span>-&gt;&gt;</span>
+					<li><a href="#">艺术</a></li>
+					<span>-&gt;&gt;</span>
+					<li class="active">百天照</li>
+				</ol>
+			</div>
 
-            </div>
-            </table>
-			<div style="font:12px Tahoma; margin:0px auto; text-align:center;">
-<div>
-<hr/>
-Copyright &copy; &nbsp;&nbsp;2017-2018&nbsp;
-<a href="#">怡乐科技有限公司</a> ALL RIGHT RESERVED<br/>
-联系方式：yibaohome@xx.com<br/>
-ICP:<a href="#">湘ICP备05021949</a>
-</div> <!-copyright	end-->
-</div> <!--footer	end-->
+			<div id="book-axis" style=" margin-top:-1% ;margin-left: 2%; ">
+				<img class="sz-img" style="width:4%; z-index: 1;" src="img/书轴.png" />
+			</div>
+
+			<div id="book" style=" margin-top:-30% ;margin-left: 4%; ">
+				<img class="book-img" style="width:15%;" src="img/book.png" />
+			</div>
+			<!--<div id="photo1" style="font-family:方正舒体 ; font-size: 34pt; margin-top: -33%; margin-left: 10%;">
+				<p>新生儿</p>
+				<p>百天照</p>
+			</div>
+            -->
+			<div id="photo1" style="margin-top: -35%; margin-left: 6%;">
+				<img class="new_birth-img" style="width: 15%;" src="img/新生儿百天照.png" />
+			</div>
+
+			<div class="container" style="margin-left: 24%;margin-top: -5%;margin-right: 2%; border-bottom:2px dashed #ccc;  padding:0 0 20px 0; margin-bottom:40px;">
+				<ul class="row">
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2009-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2061-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2066-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2071-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2085-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/微信图片_20180415201848.jpg">
+					</li>
+
+					<div class="clearfix" style="margin-bottom: 15px;"></div>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2009-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2061-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2066-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2071-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2085-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/微信图片_20180415201848.jpg">
+					</li>
+
+					<div class="clearfix" style="margin-bottom: 15px;"></div>
+					<!-- 清除浮动 -->
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2009-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2061-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2066-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2071-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/2085-百天照.jpg">
+					</li>
+					<li class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+						<img class="img-responsive" src="img/微信图片_20180415201848.jpg">
+					</li>
+				</ul>
+			</div>
+
+			<center>
+
+				<nav aria-label="Page navigation" style="margin-top:-3%;  ">
+					<ul class="pagination" style="ts">
+						<li>
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true"><span >上一页</span></span>
+							</a>
+						</li>
+						<li><a href="#"><span >1</span></a></li>
+						<li><a href="#"><span >2</span></a></li>
+						<li><a href="#"><span >3</span></a></li>
+
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true"><span >下一页</span></span>
+
+							</a>
+						</li>
+
+					</ul>
+				</nav>
+
+				<div id="water">
+					<img class="book-img" style="width:15%;" src="img/water.png" />
+				</div>
+			</center>
+			
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+
+			<div id="foot">
+				<div>
+					<hr/>
+					<p class="copyright">Copyright©2017-2018&nbsp;&nbsp;怡乐科技有限公司 ALL RIGHT RESERVED&nbsp;&nbsp;ICP:湘ICP备05021949</p>
+				</div>
+				<!-copyright	end-->
+			</div>
+			<!--footer	end-->
+
 	</body>
+
 </html>
